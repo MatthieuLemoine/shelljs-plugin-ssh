@@ -9,7 +9,7 @@
   },
   "keywords": [
     "shelljs",
-    "ssh;",
+    "ssh",
     "plugin"
   ],
   "author": "MatthieuLemoine",
@@ -27,7 +27,7 @@
     "shelljs": "^0.7.4"
   },
   "dependencies": {
-    "ssh2-client": "^1.0.0",
+    "ssh2-client": "^1.1.2",
     "yargs": "^5.0.0"
   }
 }
