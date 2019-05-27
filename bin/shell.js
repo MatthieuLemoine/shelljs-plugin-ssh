@@ -12,5 +12,10 @@ ssh
     process.stderr.write(output.error);
   })
   .catch(function onError(err) {
-    process.stderr.write(err);
+    if (err.message) {
+      process.stderr.write(err.message);
+      process.stderr.write(err.stack);
+    } else {
+      process.stderr.write(err);
+    }
   });
